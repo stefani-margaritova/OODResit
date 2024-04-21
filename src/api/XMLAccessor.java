@@ -44,10 +44,10 @@ public class XMLAccessor extends Accessor
 				// Removed redundant casting to SlideItem
 				Element slideElement = (Element) slides.item(slideNumber);
 				Slide slide = new Slide();
-				slide.setTitle(slideElement.getElementsByTagName("title").item(0).getTextContent());
+				slide.setTitle(getTitle(slideElement, XMLTags.TITLE));
 				presentation.append(slide);
 				
-				NodeList items = slideElement.getElementsByTagName("item");
+				NodeList items = slideElement.getElementsByTagName(XMLTags.ITEM);
 				for (int itemNumber  = 0; itemNumber < items.getLength(); itemNumber ++) {
 					loadSlideItem(slide, (Element) items.item(itemNumber ));
 				}

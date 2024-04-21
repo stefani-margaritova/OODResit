@@ -9,6 +9,8 @@ public class XMLTags
     protected static final String KIND = "kind";
     protected static final String TEXT = "text";
     protected static final String IMAGE = "image";
+    protected static final String TITLE = "title";
+    protected static final String ITEM = "item";
     
     /** Text of messages */
     protected static final String PCE = "Parser Configuration Exception";
