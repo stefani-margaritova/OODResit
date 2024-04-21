@@ -1,1 +1,2 @@
 # OODResit
+By Stefani Margaritova
